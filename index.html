@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Digits</title>
 </head>
 <body>
+    <button onclick="topFunc()" id="toTopBtn" title="Go to top">Top</button>
     <header class="header">
         <div class="container">
             <div class="header__wrap">
@@ -18,15 +21,33 @@
                         <path d="M78.4605 10.3586C79.8481 10.3586 80.9729 9.23375 80.9729 7.84617C80.9729 6.45859 79.8481 5.33374 78.4605 5.33374C77.0729 5.33374 75.9481 6.45859 75.9481 7.84617C75.9481 9.23375 77.0729 10.3586 78.4605 10.3586Z" fill="#FF2E6A"/>
                     </svg>
                 </div>
-                <ul class="header__nav">
-                    <li class="header__item"><a href="#" class="header__item-link">Homepages</a></li>
-                    <li class="header__item"><a href="#" class="header__item-link">Products</a></li>
-                    <li class="header__item"><a href="#" class="header__item-link">Company</a></li>
-                    <li class="header__item"><a href="#" class="header__item-link">Pricing</a></li>
-                    <li class="header__item"><a href="#" class="header__item-link">Blog</a></li>
-                </ul>
-                <a href="tel:00123456789" class="header__contact">+00 123 456 789</a>
-                <button class="btn header__btn">Contact Us</button>
+                <div class="header__wrap header__wrap-nav">
+                    <ul class="header__nav">
+                        <li class="header__item"><a href="#" class="header__item-link">Homepages</a></li>
+                        <li class="header__item"><a href="#" class="header__item-link">Products</a></li>
+                        <li class="header__item"><a href="#" class="header__item-link">Company</a></li>
+                        <li class="header__item"><a href="#" class="header__item-link">Pricing</a></li>
+                        <li class="header__item"><a href="#" class="header__item-link">Blog</a></li>
+                    </ul>
+                    <a href="tel:00123456789" class="header__contact">+00 123 456 789</a>
+                    <button class="btn header__btn">Contact Us</button>
+                    <button id="myBtn" class="btn header__btn">Open Modal</button>
+                    <div id="myModal" class="header__modal">
+                        <div class="header__content">
+                            <span class="header__close">&times;</span>
+                            <label for="inputName">Enter your name</label>
+                            <input type="text" placeholder="Name" id="inputName">
+                            <label for="inputAge">Enter your age</label>
+                            <input type="number" placeholder="Age" id="inputAge">
+                            <input type="submit" value="Submit" id="inputSubmit">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__btn-menu">
+                    <div class="header__btn-line"></div>
+                    <div class="header__btn-line"></div>
+                    <div class="header__btn-line"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -132,10 +153,11 @@
                 <button class="btn portfolio__btn">Buy Digits</button>
             </div>
         </section>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="./img/portfolio/portfolio-bg.png"></div>
         <section class="users">
             <div class="container">
                 <h2 class="caption users__caption">What others are saying</h2>
-                <div class="users__wrap">
+                <div class="users__slider">
                     <div class="users__content">
                         <p class="users__content-text">Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!</p>
                         <div class="users__content-info">
@@ -166,7 +188,7 @@
                             <a href="#" class="users__content-link">tempy.club</a>
                         </div>
                     </div>
-                </div>
+                  </div>
             </div>
         </section>
     </main>
@@ -192,7 +214,11 @@
             </div>
         </div>
     </footer>
+
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/parallax.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

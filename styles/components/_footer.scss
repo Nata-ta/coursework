@@ -4,19 +4,33 @@
 
     &__wrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        @include b(tablet) {
+            display: block;
+            padding: 0 100px;
+        }
+        @include b(mobile) {
+            display: block;
+            padding: 0 30px;
+        }
     }
 
     &__caption {
         color: $white-color;
         font-size: 48px;
-        width: 440px;
+        max-width: 440px;
         text-align: left;
+        @include b(tablet) {
+            margin-bottom: 30px;
+        }
     }
 
     &__info {
         text-align: right;
+        @include b(tablet) {
+            text-align: left;
+        }
     }
 
     &__btn {

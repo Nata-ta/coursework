@@ -15,11 +15,24 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include b(tablet) {
+            flex-direction: column;
+            justify-content: space-around;
+        }
     }
 
     &__item {
         opacity: 60%;
         transition: $trs;
+        @include b(tablet) {
+            margin-bottom: 50px;
+        }
+
+        &:last-child {
+            @include b(tablet) {
+                margin-bottom: 0;
+            }
+        }
 
         &:hover {
             opacity: 100%;

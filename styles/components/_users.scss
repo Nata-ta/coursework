@@ -13,10 +13,6 @@
 
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 32%;
         border: 1px solid rgba(69, 88, 128, 0.2);
         border-radius: 4px;
         padding: 40px 32px 20px;
@@ -28,6 +24,10 @@
             font-size: 18px;
             line-height: 32px;
             margin-bottom: 50px;
+        }
+
+        &-img {
+            margin: 0 auto;
         }
 
         &-img-box {
@@ -44,4 +44,32 @@
             text-align: center;
         }
     }
+}
+
+.slick-slider {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: $btn-color;
+    font-size: 30px;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -40px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    top: 20px;
+    color: $btn-color;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $btn-color;
 }

@@ -32,6 +32,10 @@
     &__btn{
         margin-left: 20px;
         margin-bottom: 30px;
+        @include b(mobile) {
+            display: block;
+            margin: 0 auto 30px;
+        }
     }
 
     &__img {

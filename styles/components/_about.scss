@@ -11,15 +11,30 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @include b(tablet) {
+            display: block;
+        }
     }
 
-    &__img-box {
-        width: 80%;
+    &__img {
+        max-width: 100%;
+        
+        &-box {
+            width: 80%;
+            @include b(tablet) {
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 
     &__list {
         width: 40%;
         padding-top: 100px;
+        @include b(tablet) {
+            width: 100%;
+            padding: 100px 50px 0;
+        }
     }
 
     &__content {
