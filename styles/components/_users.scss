@@ -1,0 +1,47 @@
+.users {
+    padding: 200px 0 150px;
+
+    &__caption {
+        max-width: 400px;
+        margin: 0 auto 30px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 32%;
+        border: 1px solid rgba(69, 88, 128, 0.2);
+        border-radius: 4px;
+        padding: 40px 32px 20px;
+        text-align: center;
+
+        &-text {
+            text-align: left;
+            color: $secondary-color;
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 50px;
+        }
+
+        &-img-box {
+            margin-bottom: 25px;
+        }
+
+        &-title {
+            line-height: 27px;
+            margin-bottom: 10px;
+        }
+
+        &-link {
+            display: block;
+            text-align: center;
+        }
+    }
+}

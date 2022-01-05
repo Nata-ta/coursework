@@ -1,0 +1,20 @@
+.portfolio {
+    padding: 145px 0 575px;
+    text-align: center;
+    background-color: $pink-color;
+    background-image: url(../img/portfolio/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom -195px;
+
+    &__caption {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        color: $secondary-color;
+        font-size: 21px;
+        line-height: 30px;
+        max-width: 430px;
+        margin: 0 auto 40px;
+    }
+}

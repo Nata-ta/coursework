@@ -1,0 +1,36 @@
+@import './vars';
+
+.btn {
+    color: $white-color;
+    background-color: $btn-color;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: $main-fz;
+    transition: $trs;
+
+    &:hover {
+        background-color: $btn-hover-color;
+        cursor: pointer;
+    }
+
+    &__light {
+        background-color: $white-color;
+        color: $secondary-color;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+
+        &:hover {
+            color: $white-color;
+            background-color: $btn-color;
+        }
+    }
+
+    &__secondary {
+        color: $black-color;
+        background-color: $white-color;
+        cursor: pointer;
+        padding: 15px 40px;
+        border: none;
+        border-radius: 30px;
+    }
+}

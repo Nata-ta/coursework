@@ -1,0 +1,43 @@
+.footer {
+    background-color: $btn-color;
+    padding: 90px 0 110px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__caption {
+        color: $white-color;
+        font-size: 48px;
+        width: 440px;
+        text-align: left;
+    }
+
+    &__info {
+        text-align: right;
+    }
+
+    &__btn {
+        margin-bottom: 15px;
+        padding: 14px 30px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-icon {
+            margin-right: 15px;
+        }
+    }
+
+    &__text {
+        color: $light-gray;
+        line-height: 20px;
+    }
+
+    &__link {
+        cursor: pointer;
+        color: $sand;
+    }
+}
