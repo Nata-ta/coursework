@@ -26,6 +26,10 @@ html, body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $main-ff;
     font-size: $main-fz;
@@ -61,6 +65,9 @@ a {
     font-weight: $main-fw;
     line-height: 1.3;
     text-align: center;
+    @include b(mobile) {
+        padding: 0 30px;
+    }
 }
 
 .title {

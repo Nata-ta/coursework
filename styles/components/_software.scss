@@ -9,6 +9,9 @@
         color: $secondary-color;
         opacity: 60%;
         margin-bottom: 50px;
+        @include b(mobile) {
+            padding: 0 30px;
+        }
     }
 
     &__menu {
